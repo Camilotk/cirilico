@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Alfabeto Russo</title>
+  </head>
+  <body>
+	  <div class="container">
+		  <h1>Alfabeto Russo</h1>
+		  <h5>Filtros:</h5>
+		  
+		  <select class="form-select" id="filters">
+			  <option>NENHUM</option>
+			  <option>LETRAS ESCRITAS E PRONUNCIADAS DA MESMA FORMA TANTO EM PORTUGUÊS QUANTO EM RUSSO</option>
+			  <option>LETRAS QUE TÊM A FORMA ESCRITA FAMILIAR PARA BRASILEIROS, MAS CUJA A PRONUNCIA É DIFERENTE</option>
+			  <option>LETRAS QUE TÊM A FORMA ESCRITA DIFERENTE, MAS A PRONUNCIA SEMELHANTE TANTO EM PORTUGUÊS QUANTO RUSSO</option>
+			  <option>LETRAS QUE NÃO EXISTEM EM PORTUGUÊS</option>
+		  </select>
+		 
+		  <div class="form-check form-check-inline">
+			  <input class="form-check-input" type="radio" name="option" id="destaqueOption" checked />
+			  <label class="form-check-label" for="destaqueOption">
+				  Destaque
+			  </label>
+		  </div>
+		  
+		  <div class="form-check form-check-inline">
+			  <input class="form-check-input" type="radio" name="option" id="filtroOption" />
+			  <label class="form-check-label" for="filtroOption">
+				  Filtro
+			  </label>
+		  </div>
+		  
+		  <table class="table text-center">
+  <thead>
+    <tr>
+      <th scope="col">Letra</th>
+      <th scope="col">Cursivo</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Exemplo</th>
+      <th scope="col">Escrita</th>
+    </tr>
+  </thead>
+  <tbody>
+	<!-- a -->  
+    <tr class="both">
+      <th scope="row">А а</th>
+      <td><img src="img/letras/a2.jpg" class="animated"/></td>
+      <td><a href="javascript:void(0);" onclick="var audio = new Audio('sons/Sound1.mp3').play();">/a/</a></td>
+      <td><img src="img/exemplos/atom70.jpg" /> <a href="javascript:void(0);" onclick="var audio = new Audio('sons/atom.mp3').play();">а́том</a></td>
+      <td><img src="img/escrita/atom2.jpg" class="animated"/></td>
+    </tr>
+    <!-- be -->  
+    <tr class="spoken">
+      <th scope="row">Б б</th>
+      <td><img src="img/letras/b2.jpg" class="animated" /></td>
+      <td><a href="javascript:void(0);" onclick="var audio = new Audio('sons/Sound2.mp3').play();">/be/</a></td>
+      <td><img src="img/exemplos/baton70.jpg" /> <a href="javascript:void(0);" onclick="var audio = new Audio('sons/baton.mp3').play();">бато́н</a></td>
+      <td><img src="img/escrita/baton2.jpg" class="animated"/></td>
+    </tr>
+    <!-- ve -->  
+    <tr class="written">
+      <th scope="row">В в</th>
+      <td><img src="img/letras/v2.jpg" class="animated" /></td>
+      <td><a href="javascript:void(0);" onclick="var audio = new Audio('sons/Sound3.mp3').play();">/ve/</a></td>
+      <td><img src="img/exemplos/varezhki70.jpg" /> <a href="javascript:void(0);" onclick="var audio = new Audio('sons/varezhki.mp3').play();">ва́режки</a></td>
+      <td><img src="img/escrita/varezhki2.jpg" class="animated"/></td>
+    </tr>
+    <!-- ge -->  
+    <tr class="spoken">
+      <th scope="row">Г г</th>
+      <td><img src="img/letras/g2.jpg" class="animated"/></td>
+      <td><a href="javascript:void(0);" onclick="var audio = new Audio('sons/Sound4.mp3').play();">/ge/</a></td>
+      <td><img src="img/exemplos/grusha70.jpg" /> <a href="javascript:void(0);" onclick="var audio = new Audio('sons/grusha.mp3').play();">гру́ша</a></td>
+      <td><img src="img/escrita/grusha2.jpg" class="animated"/></td>
+    </tr>
+    <!-- de -->  
+    <tr class="spoken">
+      <th scope="row">Д д</th>
+      <td><img src="img/letras/d2.jpg" class="animated"/></td>
+      <td><a href="javascript:void(0);" onclick="var audio = new Audio('sons/Sound5.mp3').play();">/de/</a></td>
+      <td><img src="img/exemplos/dinya70.jpg" /> <a href="javascript:void(0);" onclick="var audio = new Audio('sons/dynia.mp3').play();">ды́ня</a></td>
+      <td><img src="img/escrita/dynya2.jpg" class="animated"/></td>
+    </tr>
+    <!-- ye -->  
+    <tr class="both">
+      <th scope="row">Е е</th>
+      <td><img src="img/letras/e2.jpg" class="animated"/></td>
+      <td><a href="javascript:void(0);" onclick="var audio = new Audio('sons/Sound6.mp3').play();">/ye/</a></td>
+      <td><img src="img/exemplos/ezhevika70.jpg" /> <a href="javascript:void(0);" onclick="var audio = new Audio('sons/ezhevika.mp3').play();">ежеви́ка</a></td>
+      <td><img src="img/escrita/ezhevika2.jpg" class="animated"/></td>
+    </tr>
+    <!-- yo -->  
+    <tr class="spoken">
+      <th scope="row">Ё ё</th>
+      <td><img src="img/letras/yo2.jpg" class="animated"/></td>
+      <td><a href="javascript:void(0);" onclick="var audio = new Audio('sons/Sound7.mp3').play();">/yo/</a></td>
+      <td><img src="img/exemplos/ezsh70.jpg" /> <a href="javascript:void(0);" onclick="var audio = new Audio('sons/eozh.mp3').play();">ёж</a></td>
+      <td><img src="img/escrita/yozh2.jpg" class="animated"/></td>
+    </tr>
+    <!-- je -->  
+    <tr class="spoken">
+      <th scope="row">Ж ж</th>
+      <td><img src="img/letras/zh2.jpg" class="animated"/></td>
+      <td><a href="javascript:void(0);" onclick="var audio = new Audio('sons/Sound8.mp3').play();">/je/</a></td>
+      <td><img src="img/exemplos/zhuk70.jpg" /> <a href="javascript:void(0);" onclick="var audio = new Audio('sons/zhuk.mp3').play();">жук</a></td>
+      <td><img src="img/escrita/zhuk2.jpg" class="animated"/></td>
+    </tr>
+    <!-- ze -->  
+    <tr class="written">
+      <th scope="row">З з</th>
+      <td><img src="img/letras/z2.jpg" class="animated"/></td>
+      <td><a href="javascript:void(0);" onclick="var audio = new Audio('sons/Sound9.mp3').play();">/ze/</a></td>
+      <td><img src="img/exemplos/zamok70.jpg" /> <a href="javascript:void(0);" onclick="var audio = new Audio('sons/zamok1.mp3').play();">замо́к</a></td>
+      <td><img src="img/escrita/zamok2.jpg" class="animated"/></td>
+    </tr>
+    <!-- i -->  
+    <tr class="spoken">
+      <th scope="row">И и</th>
+      <td><img src="img/letras/ee2.jpg" class="animated"/></td>
+      <td><a href="javascript:void(0);" onclick="var audio = new Audio('sons/Sound10.mp3').play();">/i/</a></td>
+      <td><img src="img/exemplos/ikra70.jpg" /> <a href="javascript:void(0);" onclick="var audio = new Audio('sons/ikra.mp3').play();">икра́</a></td>
+      <td><img src="img/escrita/ikra2.jpg" class="animated"/></td>
+    </tr>
+    <!-- i kratkoye -->  
+    <tr class="spoken">
+      <th scope="row">Й й</th>
+      <td><img src="img/letras/ee_kratkoe2.jpg" class="animated"/></td>
+      <td><a href="javascript:void(0);" onclick="var audio = new Audio('sons/Sound11.mp3').play();">/i kratkoye/</a></td>
+      <td><img src="img/exemplos/yogurt70.jpg" /> <a href="javascript:void(0);" onclick="var audio = new Audio('sons/yogurt.mp3').play();">йо́гурт</a></td>
+      <td><img src="img/escrita/yogurt2.jpg" class="animated"/></td>
+    </tr>
+    <!-- ka -->  
+    <tr class="both">
+      <th scope="row">К к</th>
+      <td><img src="img/letras/k2.jpg" class="animated"/></td>
+      <td><a href="javascript:void(0);" onclick="var audio = new Audio('sons/Sound12.mp3').play();">/ka/</a></td>
+      <td><img src="img/exemplos/klubnika70.jpg" /> <a href="javascript:void(0);" onclick="var audio = new Audio('sons/klubnika.mp3').play();">клубни́ка</a></td>
+      <td><img src="img/escrita/klubnika2.jpg" class="animated"/></td>
+    </tr>
+    <!-- el -->  
+    <tr class="spoken">
+      <th scope="row">Л л</th>
+      <td><img src="img/letras/l2.jpg" class="animated"/></td>
+      <td><a href="javascript:void(0);" onclick="var audio = new Audio('sons/Sound13.mp3').play();">/el/</a></td>
+      <td><img src="img/exemplos/limon70.jpg" /> <a href="javascript:void(0);" onclick="var audio = new Audio('sons/limony.mp3').play();">лимо́н</a></td>
+      <td><img src="img/escrita/limon2.jpg" class="animated"/></td>
+    </tr>
+    <!-- em -->  
+    <tr class="both">
+      <th scope="row">М м</th>
+      <td><img src="img/letras/m2.jpg" class="animated"/></td>
+      <td><a href="javascript:void(0);" onclick="var audio = new Audio('sons/Sound14.mp3').play();">/em/</a></td>
+      <td><img src="img/exemplos/malina70.jpg" /> <a href="javascript:void(0);" onclick="var audio = new Audio('sons/malina.mp3').play();">мали́на</a></td>
+      <td><img src="img/escrita/malina2.jpg" class="animated"/></td>
+    </tr>
+    <!-- en -->  
+    <tr class="written">
+      <th scope="row">Н н</th>
+      <td><img src="img/letras/n2.jpg" class="animated"/></td>
+      <td><a href="javascript:void(0);" onclick="var audio = new Audio('sons/Sound15.mp3').play();">/en/</a></td>
+      <td><img src="img/exemplos/noski70.jpg" /> <a href="javascript:void(0);" onclick="var audio = new Audio('sons/noski.mp3').play();">носки́</a></td>
+      <td><img src="img/escrita/noski2.jpg" class="animated"/></td>
+    </tr>
+    <!-- o -->  
+    <tr class="both">
+      <th scope="row">О о</th>
+      <td><img src="img/letras/o2.jpg" class="animated"/></td>
+      <td><a href="javascript:void(0);" onclick="var audio = new Audio('sons/Sound16.mp3').play();">/o/</a></td>
+      <td><img src="img/exemplos/ovosshi70.jpg" /> <a href="javascript:void(0);" onclick="var audio = new Audio('sons/ovoshchi.mp3').play();">о́вощи</a></td>
+      <td><img src="img/escrita/ovoshchi2.jpg" class="animated"/></td>
+    </tr>
+    <!-- pe -->  
+    <tr class="spoken">
+      <th scope="row">П п</th>
+      <td><img src="img/letras/p2.jpg" class="animated"/></td>
+      <td><a href="javascript:void(0);" onclick="var audio = new Audio('sons/Sound17.mp3').play();">/pe/</a></td>
+      <td><img src="img/exemplos/perez70.jpg" /> <a href="javascript:void(0);" onclick="var audio = new Audio('sons/peretc.mp3').play();">пе́рец</a></td>
+      <td><img src="img/escrita/perets2.jpg" class="animated"/></td>
+    </tr>
+     <!-- er -->  
+    <tr class="written">
+      <th scope="row">Р р</th>
+      <td><img src="img/letras/r2.jpg" class="animated"/></td>
+      <td><a href="javascript:void(0);" onclick="var audio = new Audio('sons/Sound18.mp3').play();">/er/</a></td>
+      <td><img src="img/exemplos/riba70.jpg" /> <a href="javascript:void(0);" onclick="var audio = new Audio('sons/ryba.mp3').play();">ры́ба</a></td>
+      <td><img src="img/escrita/ryba2.jpg" class="animated"/></td>
+    </tr>
+    <!-- es -->  
+    <tr class="written">
+      <th scope="row">С с</th>
+      <td><img src="img/letras/s2.jpg" class="animated"/></td>
+      <td><a href="javascript:void(0);" onclick="var audio = new Audio('sons/Sound19.mp3').play();">/es/</a></td>
+      <td><img src="img/exemplos/stul70.jpg" /> <a href="javascript:void(0);" onclick="var audio = new Audio('sons/stul.mp3').play();">стул</td>
+      <td><img src="img/escrita/stul2.jpg" class="animated"/></td>
+    </tr>
+    <!-- te -->  
+    <tr class="both">
+      <th scope="row">Т т</th>
+      <td><img src="img/letras/t2.jpg" class="animated"/></td>
+      <td><a href="javascript:void(0);" onclick="var audio = new Audio('sons/Sound20.mp3').play();">/te/</a></td>
+      <td><img src="img/exemplos/tort70.jpg" /> <a href="javascript:void(0);" onclick="var audio = new Audio('sons/tort.mp3').play();">торт</a></td>
+      <td><img src="img/escrita/tort2.jpg" class="animated"/></td>
+    </tr>
+    <!-- u -->  
+    <tr class="written">
+      <th scope="row">У у</th>
+      <td><img src="img/letras/u2.jpg" class="animated"/></td>
+      <td><a href="javascript:void(0);" onclick="var audio = new Audio('sons/Sound21.mp3').play();">/u/</a></td>
+      <td><img src="img/exemplos/udo4ka70.jpg" /> <a href="javascript:void(0);" onclick="var audio = new Audio('sons/udochka.mp3').play();">у́дочка</a></td>
+      <td><img src="img/escrita/udochka2.jpg" class="animated"/></td>
+    </tr>
+    <!-- ef -->  
+    <tr class="spoken">
+      <th scope="row">Ф ф</th>
+      <td><img src="img/letras/f2.jpg" class="animated"/></td>
+      <td><a href="javascript:void(0);" onclick="var audio = new Audio('sons/Sound22.mp3').play();">/ef/</a></td>
+      <td><img src="img/exemplos/frukti70.jpg" /> <a href="javascript:void(0);" onclick="var audio = new Audio('sons/frukty.mp3').play();">фру́кты</a></td>
+      <td><img src="img/escrita/frukty2.jpg" class="animated"/></td>
+    </tr>
+    <!-- ha -->  
+    <tr class="written">
+      <th scope="row">Х х</th>
+      <td><img src="img/letras/h2.jpg" class="animated"/></td>
+      <td><a href="javascript:void(0);" onclick="var audio = new Audio('sons/Sound23.mp3').play();">/ha/ ou /rrá/</a></td>
+      <td><img src="img/exemplos/hvoya70.jpg" /> <a href="javascript:void(0);" onclick="var audio = new Audio('sons/khovoya.mp3').play();">хво́я</a></td>
+      <td><img src="img/escrita/hvoya2.jpg" class="animated"/></td>
+    </tr>
+    <!-- ts -->  
+    <tr class="spoken">
+      <th scope="row">Ц ц</th>
+      <td><img src="img/letras/ts2.jpg" class="animated"/></td>
+      <td><a href="javascript:void(0);" onclick="var audio = new Audio('sons/Sound24.mp3').play();">/ts/</a></td>
+      <td><img src="img/exemplos/tsyfry70.jpg" /> <a href="javascript:void(0);" onclick="var audio = new Audio('sons/tzyfry.mp3').play();">ци́фры</a></td>
+      <td><img src="img/escrita/tsyfry2.jpg" class="animated"/></td>
+    </tr>
+    <!-- tche -->  
+    <tr class="written">
+      <th scope="row">Ч ч</th>
+      <td><img src="img/letras/ch2.jpg" class="animated"/></td>
+      <td><a href="javascript:void(0);" onclick="var audio = new Audio('sons/Sound25.mp3').play();">/tche/</a></td>
+      <td><img src="img/exemplos/chashka70.jpg" /> <a href="javascript:void(0);" onclick="var audio = new Audio('sons/chashka.mp3').play();">ча́шка</td>
+      <td><img src="img/escrita/chashka2.jpg" class="animated"/></td>
+    </tr>
+    <!-- cha -->  
+    <tr class="spoken">
+      <th scope="row">Ш ш</th>
+      <td><img src="img/letras/sh2.jpg" class="animated"/></td>
+      <td><a href="javascript:void(0);" onclick="var audio = new Audio('sons/Sound26.mp3').play();">/cha/</a></td>
+      <td><img src="img/exemplos/shapka70.jpg" /> <a href="javascript:void(0);" onclick="var audio = new Audio('sons/shapka.mp3').play();">ша́пка</a></td>
+      <td><img src="img/escrita/shapka2.jpg" class="animated"/></td>
+    </tr>
+    <!-- scha -->  
+    <tr class="spoken">
+      <th scope="row">Щ щ</th>
+      <td><img src="img/letras/shch2.jpg" class="animated"/></td>
+      <td><a href="javascript:void(0);" onclick="var audio = new Audio('sons/Sound27.mp3').play();">/scha/</a></td>
+      <td><img src="img/exemplos/shchotka70.jpg" /> <a href="javascript:void(0);" onclick="var audio = new Audio('sons/shchotka.mp3').play();">щётка</a></td>
+      <td><img src="img/escrita/shchotka2.jpg" class="animated"/></td>
+    </tr>
+    <!-- tviordiy znak -->  
+    <tr class="onlyRussian">
+      <th scope="row">ъ</th>
+      <td><img src="img/letras/tv_znak2.jpg" class="animated"/></td>
+      <td><a href="javascript:void(0);" onclick="var audio = new Audio('sons/Sound28.mp3').play();">tviordiy znak</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- ih -->  
+    <tr class="onlyRussian">
+      <th scope="row">ы</th>
+      <td><img src="img/letras/y2.jpg" class="animated"/></td>
+      <td><a href="javascript:void(0);" onclick="var audio = new Audio('sons/Sound29.mp3').play();">/ih/</a>*</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- myagkiy znak -->  
+    <tr class="onlyRussian">
+      <th scope="row">ь</th>
+      <td><img src="img/letras/m_znak2.jpg" class="animated"/></td>
+      <td><a href="javascript:void(0);" onclick="var audio = new Audio('sons/Sound30.mp3').play();">myagkiy znak</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- é -->  
+    <tr class="spoken">
+      <th scope="row">Э э</th>
+      <td><img src="img/letras/ue2.jpg" class="animated"/></td>
+      <td><a href="javascript:void(0);" onclick="var audio = new Audio('sons/Sound31.mp3').play();">/é/</a></td>
+      <td><img src="img/exemplos/ekran70.jpg" /> <a href="javascript:void(0);" onclick="var audio = new Audio('sons/ekran.mp3').play();">экра́н</a></td>
+      <td><img src="img/escrita/ekran2.jpg" class="animated"/></td>
+    </tr>
+    <!-- yu -->  
+    <tr class="spoken">
+      <th scope="row">Ю ю</th>
+      <td><img src="img/letras/yu2.jpg" class="animated"/></td>
+      <td><a href="javascript:void(0);" onclick="var audio = new Audio('sons/Sound32.mp3').play();">/yu/</a></td>
+      <td><img src="img/exemplos/ubka70.jpg" /> <a href="javascript:void(0);" onclick="var audio = new Audio('sons/yubka.mp3').play();">ю́бка</a></td>
+      <td><img src="img/escrita/yubka2.jpg" class="animated"/></td>
+    </tr>
+    <!-- ya -->  
+    <tr class="spoken">
+      <th scope="row">Я я</th>
+      <td><img src="img/letras/shch2.jpg" class="animated"/></td>
+      <td><a href="javascript:void(0);" onclick="var audio = new Audio('sons/Sound33.mp3').play();">/ya/</a></td>
+      <td><img src="img/exemplos/yabloko70.jpg" /> <a href="javascript:void(0);" onclick="var audio = new Audio('sons/jabloko.mp3').play();">я́блоко</a></td>
+      <td><img src="img/escrita/yabloko2.jpg" class="animated"/></td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<h6>Referências / Créditos:</h6>
+<ul>
+	<li><a href="http://www.russianforeveryone.com/RufeA/Lessons/Introduction/Alphabet/Alphabet.htm">Russian for Everyone - Russian Alphabet</a></li>
+	<li><a href="https://www.sorusso.com.br/conteudo/alfabeto.php#:~:text=%D0%A0%D0%A3%D0%A1%D0%A1%D0%9A%D0%98%D0%99%20%D0%90%D0%9B%D0%A4%D0%90%D0%92%D0%98%D0%A2,no%20grego%20e%20no%20hebraico.">Só Russo - Alfabeto Russo</a></li>
+	<li>Apostila de Russo da Profª Alexandra Noryenko Emmel</li>
+</ul>
+	  </div> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+  </body>
+</html>
